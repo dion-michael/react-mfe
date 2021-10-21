@@ -12,14 +12,14 @@ import Pricing from './components/Pricing';
 export default () => {
     return (
         <div>
-            <StylesProvider generateClassName={generateClassName}>
+            {/* <StylesProvider generateClassName={generateClassName}> */}
                 <BrowserRouter>
                     <Switch>
                         <Route exact path="/pricing" component={Pricing}/>
                         <Route exact path="/" component={Landing}/>
                     </Switch>
                 </BrowserRouter>
-            </StylesProvider>
+            {/* </StylesProvider> */}
         </div>
     )
 }
